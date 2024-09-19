@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome to the Home Page</h1>
+
+<div th:if="${param.message}">
+    <span th:text="${param.message}"></span>
+</div>
+
+<h2>Login</h2>
+<a href="/login">Login</a>
+
+<h2>Register</h2>
+<a href="/register">Register</a>
+</body>
+</html>
